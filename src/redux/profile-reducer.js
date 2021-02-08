@@ -6,12 +6,7 @@ const SET_STATUS = "SET_STATUS";
 const DELETE_POST = "DELETE_POST";
 
 let initialState = {
-  posts: [
-    { id: 1, message: "Hi, how are you?", likesCount: 12 },
-    { id: 2, message: "It's my first post", likesCount: 11 },
-    { id: 3, message: "BlaBla", likesCount: 11 },
-    { id: 4, message: "DaDa", likesCount: 11 },
-  ],
+  posts: [{ id: 1, message: "Hi, how are you?", likesCount: 12 }],
   profile: null,
   status: "",
 };
