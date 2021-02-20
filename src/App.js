@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, Provider } from "react-redux";
-import { BrowserRouter, Route, withRouter } from "react-router-dom";
+import { HashRouter, Route, withRouter } from "react-router-dom";
 import { compose } from "redux";
 import "./App.css";
 import Preloader from "./components/common/Preloader/Preloader";
@@ -47,11 +47,11 @@ const AppContainer = compose(
 
 const MainApp = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Provider store={store}>
         <AppContainer />
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
